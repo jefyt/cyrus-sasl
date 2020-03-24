@@ -223,9 +223,6 @@ int main(int argc, char **argv)
 #ifndef HAVE_INT32_T
     try_signed (f, 32);
 #endif /* HAVE_INT32_T */
-#ifndef HAVE_INT64_T
-    try_signed (f, 64);
-#endif /* HAVE_INT64_T */
 
 #ifndef HAVE_U_INT8_T
     try_unsigned (f, 8);
@@ -236,9 +233,6 @@ int main(int argc, char **argv)
 #ifndef HAVE_U_INT32_T
     try_unsigned (f, 32);
 #endif /* HAVE_U_INT32_T */
-#ifndef HAVE_U_INT64_T
-    try_unsigned (f, 64);
-#endif /* HAVE_U_INT64_T */
 
     print_post(f);
   
